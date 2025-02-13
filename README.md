@@ -1,28 +1,72 @@
-# NLP-strategy-comprehension
-This repository contains Python codes used to extract info from large amount of texts
-## Overview
+NLP Strategy Comprehension
 
-This project aims to analyze and process text data using various Python libraries and methodologies. The primary focus is on extracting and analyzing key terms within specified categories, utilizing techniques such as unigram and bigram frequency analysis. 
+Overview
 
-### Features
+This repository contains Python code developed for the text mining and analysis of academic literature on the "Made in Italy" field, as part of my Master's thesis at the University of Padova. The project focuses on extracting and analyzing key themes in academic discourse using Natural Language Processing (NLP) and text mining techniques.
 
-- **Text Data Processing**: Utilizes the `pandas` library for data manipulation and analysis.
-- **Natural Language Processing**: Employs `nltk` and 'spacy' for text processing and tokenization.
-- **Pattern Matching**: Implements regular expressions using the `re` library to extract specific patterns from the text.
-- **Data Structures**: Utilizes the `collections` library to efficiently count and manage occurrences of terms.
-- **JSON Handling**: Incorporates the `json` library for reading and writing data in JSON format.
-- **Summarization**: Uses the `sumy` library for summarizing text data, enhancing the insights derived from the analysis.
+Objectives
 
-### Analysis Methods
+The primary goal of this project is to analyze academic literature on "Made in Italy" by identifying thematic structures, extracting key terms, and visualizing semantic relationships. The research employs a combination of topic modeling, clustering, and semantic analysis to uncover the discourse surrounding this concept.
 
-The analysis is structured around four main categories:
-- **Sociale**: Focuses on social aspects within the text data.
-- **culture**: Analyzes cultural references and themes.
-- **Method**: Examines the methods employed in the data.
-- **Digital**: Investigates digital elements and trends.
+Features
 
-### Visual Representations
+Data Processing & Preprocessing
 
-To provide a clearer understanding of the text data, the project includes visual representations, such as word clouds, which highlight the most frequently occurring terms and phrases.
+Utilizes pandas for structured data manipulation.
 
-### Getting Started
+Implements spaCy and NLTK for text tokenization, lemmatization, and stopword removal.
+
+Applies regular expressions (re library) for pattern matching and cleaning.
+
+Natural Language Processing Techniques
+
+Topic Modeling: Uses Latent Dirichlet Allocation (LDA) to extract thematic structures.
+
+Word Embeddings: Employs TF-IDF, Word2Vec, and BERT to analyze term relationships.
+
+Summarization: Uses TextRank and Sumy for automated text summarization.
+
+Semantic Analysis: Applies clustering techniques to group related research themes.
+
+Visual Representations
+
+Word Clouds: Highlights the most frequently occurring terms.
+
+Topic Distribution Graphs: Visualizes the distribution of key topics across the corpus.
+
+Dendrograms & Similarity Maps: Represents relationships between different thematic clusters.
+
+Categories of Analysis
+
+The research categorizes the extracted data into four primary thematic areas:
+
+Sociale: Social aspects and implications.
+
+Culture: Cultural themes and references.
+
+Method: Research methodologies and approaches.
+
+Digital: Digital and technological influences.
+
+Tools & Libraries Used
+
+Programming Languages: Python
+
+Libraries: pandas, spaCy, NLTK, re, scikit-learn, gensim, Sumy, TextBlob, matplotlib, seaborn
+
+Visualization Tools: WordCloud, Matplotlib, Seaborn
+
+Project Impact
+
+This work contributes to both academic research and industry applications, providing insights into how the "Made in Italy" concept is articulated across different disciplines. The extracted information can aid in strategic decision-making, branding, and innovation in industries related to cultural heritage and craftsmanship.
+
+Acknowledgments
+
+This project was conducted as part of my Master's thesis at the University of Padova under the supervision of Prof. Luigi Salmaso, with co-supervision by Dr. Nicolò Biasetton and Dr. Elena Barzizza.
+
+Usage
+
+To replicate the analysis, install the required dependencies and run the scripts following the project structure outlined in the repository.
+
+For any inquiries or collaborations, feel free to contact me!
+
