@@ -1,4 +1,4 @@
-NLP Strategy Comprehension
+**NLP Strategy Comprehension**
 
 Overview
 
