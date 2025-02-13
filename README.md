@@ -1,87 +1,99 @@
-NLP Strategy Comprehension
+# NLP-Strategy-Comprehension
 
-Overview
+## Overview
+This repository contains the Python scripts developed for the text mining and text analysis of academic literature in the field of "Made in Italy." The project employs advanced Natural Language Processing (NLP) techniques to extract and analyze key themes, terms, and concepts from a large corpus of academic texts. The main objective is to identify how "Made in Italy" is conceptualized across different academic disciplines and provide strategic insights for cultural and industrial applications.
 
-Objectives
+## Features
 
-Features
+### 🔹 Text Data Processing
+- Uses **pandas** for structured data manipulation and analysis.
+- Implements **regular expressions (`re` library)** for pattern extraction.
+- Handles **JSON data** for structured storage and retrieval.
 
-This repository contains Python code developed for text mining and analysis of academic literature on "Made in Italy", as part of my Master's thesis at the University of Padova. The project focuses on extracting key themes, analyzing discourse, and visualizing semantic relationships using Natural Language Processing (NLP) and text mining techniques.
+### 🔹 Natural Language Processing
+- Employs **spaCy** and **NLTK** for tokenization, lemmatization, and linguistic analysis.
+- Extracts key terms using **TF-IDF** and **TextRank**.
+- Summarizes documents using the **sumy** library.
 
-Objectives
+### 🔹 Semantic and Thematic Analysis
+- Implements **Latent Dirichlet Allocation (LDA)** for topic modeling.
+- Uses **word embeddings (Word2Vec, GloVe, and BERT)** for semantic similarity detection.
+- Clusters documents using **hierarchical and k-means clustering**.
 
-The primary goal of this project is to analyze academic literature on "Made in Italy" by identifying thematic structures, extracting key terms, and visualizing insights. The research employs a combination of topic modeling, clustering, and semantic analysis to uncover the evolving discourse on this topic.
+### 🔹 Visual Representations
+- Generates **word clouds** for frequency analysis.
+- Uses **dendrograms and heatmaps** to visualize thematic similarities.
+- Analyzes **timeline trends** of academic discourse over time.
 
-Features
+## Methodology
 
-1. Data Processing & Preprocessing
+### 🔸 Data Acquisition & Preprocessing
+1. **Corpus Selection:**
+   - Academic papers, books, and reports on "Made in Italy."
+2. **Text Cleaning:**
+   - Removal of stopwords, punctuation, and special characters.
+   - Tokenization and lemmatization.
+3. **Normalization:**
+   - Standardizing text formats and encoding.
 
-Uses pandas for structured data manipulation.
+### 🔸 Analysis Techniques
+- **Frequency Analysis**: Identifies the most common terms and bigrams.
+- **Topic Modeling (LDA)**: Extracts latent themes from the corpus.
+- **Semantic Clustering**: Groups similar texts based on word embeddings.
+- **Sentiment Analysis**: Assesses academic perspectives on "Made in Italy."
+- **Keyword Extraction**: Identifies field-specific terminology.
 
-Implements spaCy and NLTK for text tokenization, lemmatization, and stopword removal.
+## Project Structure
+```
+├── data/               # Raw and processed text data
+├── notebooks/          # Jupyter notebooks with analysis steps
+├── src/               # Python scripts for text processing
+│   ├── preprocessing.py
+│   ├── topic_modeling.py
+│   ├── clustering.py
+│   ├── visualization.py
+│   ├── summarization.py
+├── results/           # Outputs (word clouds, topic distributions, etc.)
+├── README.md          # Project documentation
+```
 
-Applies regular expressions (re library) for pattern matching and text cleaning.
-
-2. Natural Language Processing Techniques
-
-Topic Modeling: Extracts thematic structures using Latent Dirichlet Allocation (LDA).
-
-Word Embeddings: Analyzes semantic relationships using TF-IDF, Word2Vec, and BERT.
-
-Summarization: Implements TextRank and Sumy for automated text summarization.
-
-Semantic Analysis: Groups related research themes using clustering techniques.
-
-3. Visual Representations
-
-Word Clouds: Highlights the most frequently occurring terms.
-
-Topic Distribution Graphs: Shows the distribution of key topics across the corpus.
-
-Dendrograms & Similarity Maps: Represents relationships between different thematic clusters.
-
-Categories of Analysis
-
-The research classifies the extracted data into four thematic areas:
-
-Sociale → Social aspects and implications.
-
-Culture → Cultural themes and references.
-
-Method → Research methodologies and approaches.
-
-Digital → Digital and technological influences.
-
-Tools & Libraries Used
-
-Programming Language: Python
-
-Libraries: pandas, spaCy, NLTK, re, scikit-learn, gensim, Sumy, TextBlob, matplotlib, seaborn
-
-Visualization Tools: WordCloud, Matplotlib, Seaborn
-
-Project Impact
-
-This research contributes to both academic studies and industry applications by providing insights into how the "Made in Italy" concept is articulated across different disciplines. The extracted information can assist in strategic decision-making, branding, and innovation for industries related to cultural heritage and craftsmanship.
-
-Acknowledgments
-
-This project was conducted as part of my Master’s thesis at the University of Padova, under the supervision of Prof. Luigi Salmaso, with co-supervision by Dr. Nicolò Biasetton and Dr. Elena Barzizza.
-
-Usage
-
-To replicate this analysis:
-
-Clone the repository.
-
-Install the required dependencies using:
-
+## Installation
+Clone the repository and install dependencies:
+```bash
+git clone https://github.com/yourusername/NLP-Strategy-Comprehension.git
+cd NLP-Strategy-Comprehension
 pip install -r requirements.txt
+```
 
-Follow the provided scripts and Jupyter notebooks to process text data and generate insights.
+## Usage
+Run the main script to process text data and perform the analysis:
+```bash
+python src/main.py
+```
+For interactive analysis, open Jupyter Notebook:
+```bash
+jupyter notebook
+```
 
-For inquiries or collaborations, feel free to reach out! 🚀
+## Results & Insights
+The study reveals the most significant themes associated with "Made in Italy," such as:
+- **Craftsmanship & Quality**: Strong academic emphasis on artisanal excellence.
+- **Sustainability & Innovation**: Emerging trends in eco-friendly production.
+- **Cultural Heritage**: The role of historical and artistic traditions in branding.
+- **Economic & Industrial Impact**: Influence on global markets and trade policies.
 
+The findings are visualized using:
+- **Word clouds** to highlight frequent terms.
+- **Thematic maps** showing relationships between different research fields.
+- **Time-series analysis** to track evolving discussions over time.
+
+## Contributors
+- **Danial Bazzazi** (Author, Researcher, and Developer)
+- **Prof. Luigi Salmaso** (Supervisor)
+- **Dr. Nicolò Biasetton & Dr. Elena Barzizza** (Co-supervisors)
+
+## Acknowledgments
+This research was conducted as part of the Master's Thesis in **Management Engineering** at the **University of Padova**, academic year **2024/2025**.
 
 
 
